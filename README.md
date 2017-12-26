@@ -1,6 +1,8 @@
 # pyrit_cuda_correct
-error fixed for pyrit cuda module
-Executing '/usr/local/cuda/bin/nvcc -m64 C -Xcompiler "-fPIC" --ptx ./_cpyrit_cudakernel.cu'
+This is pyrit cuda module which I removed error of oiginal version.
+
+
+[Executing '/usr/local/cuda/bin/nvcc -m64 C -Xcompiler "-fPIC" --ptx ./_cpyrit_cudakernel.cu'
 nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
 nvcc fatal   : Don't know what to do with 'C'
 Traceback (most recent call last):
@@ -22,6 +24,6 @@ Traceback (most recent call last):
     subprocess.check_call(nvcc_cmd, shell=True)
   File "/usr/lib/python2.7/subprocess.py", line 541, in check_call
     raise CalledProcessError(retcode, cmd)
-subprocess.CalledProcessError: Command '/usr/local/cuda/bin/nvcc -m64 C -Xcompiler "-fPIC" --ptx ./_cpyrit_cudakernel.cu' returned non-zero exit status 1
+subprocess.CalledProcessError: Command '/usr/local/cuda/bin/nvcc -m64 C -Xcompiler "-fPIC" --ptx ./_cpyrit_cudakernel.cu' returned non-zero exit status 1]
 
-I fixed this error and expose corrected code
+The original version has such a compile error inspite of appropriate environment.
