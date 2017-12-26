@@ -1,5 +1,5 @@
 # pyrit_cuda_correct
-This is pyrit cuda module which I removed error of oiginal version.
+This is pyrit cuda module which I removed error of oiginal version(original version is here:https://github.com/JPaulMora/Pyrit).
 
 
 [Executing '/usr/local/cuda/bin/nvcc -m64 C -Xcompiler "-fPIC" --ptx ./_cpyrit_cudakernel.cu'
